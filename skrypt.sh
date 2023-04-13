@@ -20,6 +20,9 @@ elif [ "$1" = "--help" || "$1" = "-h" ]; then
   echo "  --date               Wyświetla dzisiejszą datę."
   echo "  --logs <liczba plików> Tworzy określoną liczbę plików logx.txt."
   echo "  --help               Wyświetla krótką pomoc."
+elif [ "$1" = "--init" ]; then
+  git clone https://github.com/BarteQ343/NPwIT_Lab4
+  export PATH=$PATH:$(pwd)
 else
   echo "Użycie: $0 --date | --logs <liczba plików> | --help"
 fi
