@@ -23,9 +23,12 @@ elif [ "$1" = "--logs" || "$1" = "-l" ]; then
   fi
 elif [ "$1" = "--help" || "$1" = "-h" ]; then
   echo "Użycie: $0 --date || --logs <liczba plików> || --help"
-  echo "  --date lub -d                                 Wyświetla dzisiejszą datę."
-  echo "  --logs <liczba plików> lub -l <liczba plików> Tworzy określoną liczbę plików logx.txt."
-  echo "  --help lub -h                                 Wyświetla krótką pomoc."
+  echo "  --date lub -d                                  Wyświetla dzisiejszą datę."
+  echo "  --logs <liczba plików> lub -l <liczba plików>  Tworzy określoną liczbę plików logx.txt."
+  echo "  --help lub -h                                  Wyświetla krótką pomoc."
+  echo "  --init                                         Klonuje całe repo do katalogu, w którym skrypt został uruchomiony."
+  echo "  --error <liczba plików> lub -e <liczba plików> Tworzy określoną liczbę plików errorx.txt."
+
 elif [ "$1" = "--init" ]; then
   git clone https://github.com/BarteQ343/NPwIT_Lab4
   export PATH=$PATH:$(pwd)
