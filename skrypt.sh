@@ -16,10 +16,10 @@ elif [ "$1" = "--logs" || "$1" = "-l" ]; then
     echo "Utworzono $num_logs plików logx.txt"
   fi
 elif [ "$1" = "--help" || "$1" = "-h" ]; then
-  echo "Użycie: $0 --date | --logs <liczba plików> | --help"
-  echo "  --date               Wyświetla dzisiejszą datę."
-  echo "  --logs <liczba plików> Tworzy określoną liczbę plików logx.txt."
-  echo "  --help               Wyświetla krótką pomoc."
+  echo "Użycie: $0 --date || --logs <liczba plików> || --help"
+  echo "  --date lub -d                                 Wyświetla dzisiejszą datę."
+  echo "  --logs <liczba plików> lub -l <liczba plików> Tworzy określoną liczbę plików logx.txt."
+  echo "  --help lub -h                                 Wyświetla krótką pomoc."
 else
-  echo "Użycie: $0 --date | --logs <liczba plików> | --help"
+  echo "Użycie: $0 --date || --logs <liczba plików> || --help"
 fi
